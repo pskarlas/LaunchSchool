@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Exercises Positioning</title>
+    <meta charset="utf-8">
+    <style>
+      .boxed {
+        position:fixed;
+        top:25px;
+
+        background-color: white;
+        padding: 50px 20px;
+        width: 400px;
+        left: 50%;
+        margin-left: -200px;
+        z-index:2;
+        box-sizing: border-box;
+
+      }
+
+      .background {
+        position:fixed;
+        margin-top: 0;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        background: rgba(0, 0, 0, .6);
+        z-index:1;
+      }
+
+      .smallBox {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #fcfc99;
+        top:-10px;
+        left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit nisi a tristique condimentum. Nullam sollicitudin enim lectus. Curabitur leo nunc, accumsan vel laoreet vitae, lacinia sed urna. Mauris tincidunt, augue id semper tempor, metus ex tempor massa, ut sagittis quam diam nec neque. Vestibulum blandit ante eros, id ultrices tellus ultricies ac. Donec sollicitudin leo at lorem eleifend rhoncus. In blandit, elit nec tempor pellentesque, tortor ipsum faucibus turpis, quis ornare leo felis at purus. Pellentesque sit amet lacinia enim. Etiam id commodo diam.
+
+      Nulla iaculis tellus ut ultricies tincidunt. Donec luctus varius ligula, ut ornare urna ultricies ac. Suspendisse volutpat enim massa, in tempor augue hendrerit ut. Fusce in ex euismod, bibendum metus ac, iaculis augue. Aenean id lacus luctus, porttitor massa eget, blandit lorem. Nulla facilisi. Proin ut tellus sapien.
+
+      Sed scelerisque rhoncus augue sed hendrerit. Nullam vestibulum, lectus a cursus venenatis, magna justo bibendum nibh, sed efficitur orci ipsum ac justo. Ut varius ipsum nec velit finibus, vel aliquet velit congue. Integer maximus vulputate urna quis ultricies. Cras posuere consectetur sem, in convallis purus sollicitudin eget. Sed molestie ante non lectus pretium, nec ullamcorper massa accumsan. Sed id ipsum eget nunc ornare bibendum ut vitae purus. Suspendisse malesuada ullamcorper egestas. Maecenas commodo lectus et accumsan aliquet. Quisque vitae vestibulum risus, ut dapibus felis.
+
+   
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit nisi a tristique condimentum. Nullam sollicitudin enim lectus. Curabitur leo nunc, accumsan vel laoreet vitae, lacinia sed urna. Mauris tincidunt, augue id semper tempor, metus ex tempor massa, ut sagittis quam diam nec neque. Vestibulum blandit ante eros, id ultrices tellus ultricies ac. Donec sollicitudin leo at lorem eleifend rhoncus. In blandit, elit nec tempor pellentesque, tortor ipsum faucibus turpis, quis ornare leo felis at purus. Pellentesque sit amet lacinia enim. Etiam id commodo diam.
+
+      Nulla iaculis tellus ut ultricies tincidunt. Donec luctus varius ligula, ut ornare urna ultricies ac. Suspendisse volutpat enim massa, in tempor augue hendrerit ut. Fusce in ex euismod, bibendum metus ac, iaculis augue. Aenean id lacus luctus, porttitor massa eget, blandit lorem. Nulla facilisi. Proin ut tellus sapien.
+
+      Sed scelerisque rhoncus augue sed hendrerit. Nullam vestibulum, lectus a cursus venenatis, magna justo bibendum nibh, sed efficitur orci ipsum ac justo. Ut varius ipsum nec velit finibus, vel aliquet velit congue. Integer maximus vulputate urna quis ultricies. Cras posuere consectetur sem, in convallis purus sollicitudin eget. Sed molestie ante non lectus pretium, nec ullamcorper massa accumsan. Sed id ipsum eget nunc ornare bibendum ut vitae purus. Suspendisse malesuada ullamcorper egestas. Maecenas commodo lectus et accumsan aliquet. Quisque vitae vestibulum risus, ut dapibus felis.
+
+    <section>
+    <p class="background"></p>
+    <div class="boxed">
+      Im positioned!
+      <div class="smallBox"></div>
+    </div>
+    
+
+  </body>
+<html>
+
