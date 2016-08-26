@@ -1,0 +1,98 @@
+ * {box-sizing: border-box;}
+
+
+      body {
+        background-color: #d2dcbd;
+      }
+      header {
+        margin: 0 auto;
+        max-width:930px;
+
+      }
+      footer {
+        margin:0 auto;
+        max-width: 960px;
+
+      }
+      header > h1 {
+        float:left;
+        background: transparent url(../photo_logo.png) 0 0 no-repeat;
+        padding: 45px 0 15px 110px;
+        font: normal 36px Helvetica;
+        color: #193441;
+
+      }
+      main {
+        margin:0 auto; /*For centering main section in viewport*/
+        padding: 30px;
+        max-width:960px;
+        background-color:white;
+      }
+      
+      header > nav {
+        float:right;
+        padding-top:117px;
+      }
+      nav > ul {
+        margin: 0;
+        padding: 0 20px 0 0;
+
+      }
+      header > nav > ul > li  {
+        display:inline-block;
+      }
+      header > nav > ul > li > a {
+        text-decoration: none;
+        background-color: white;
+        padding: 10px 45px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        color: #91aa9d;
+        height: 30px;
+        line-height: 30px;
+      }
+      header::before, header::after {
+        content: "";
+        display: block;
+        width: 530px;
+      }
+      header::after {
+        clear:both;
+        zoom: 1; /*For internet explorer compatibility*/
+      }
+      nav > li {
+
+      }
+      .selected {
+        background-color: #91aa9d;
+        color: white;
+      }
+      
+      .two_thirds {
+        width:66.6%;
+        float: left;
+      }
+      .one_third {
+        width:33.3%;
+        float: left;
+      }
+      .clearfix:before, .clearfix:after {
+        content: "";
+        display: block;
+      }
+      .clearfix:after {
+        clear:both;
+        zoom: 1;
+      }
+      .one_third > img {
+        width: 100%;
+      }
+      .two_thirds > p {
+        padding-right:15px;
+        margin-top: 0;
+      }
+      .logo {
+        line-height: 20px;
+        font-size:20px;
+        vertical-align: middle;
+      }
