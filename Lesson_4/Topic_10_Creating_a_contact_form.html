@@ -3,97 +3,195 @@
 <head>
   <title>Creating a contact form</title>
   <meta charset="UTF-8">
+  <style type="text/css">
+    body {
+
+      font: normal 16px Helvetica, sans-serif;
+    }
+    fieldset {
+      padding:0;
+      margin: 0 auto;
+      border:none;
+      width: 500px;
+
+    }
+    ul {
+      list-style-type: none;
+    }
+    dt {
+      margin: 5px 0 5px 0;
+    }
+    dd {
+      margin: 0;
+
+    }
+    ul > label {
+      margin-bottom: 5px;
+    }
+    li > label {
+      font-size: 14px;
+    }
+    textarea {
+      display: block;
+    }
+    label {
+      font-size: 18px;
+    }
+    input[type="text"], 
+    input[type="email"], 
+    input[type="number"],
+    textarea {
+      width: 100%;
+      height: 30px;
+      font-size: 14px;
+      padding-left:5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: auto;
+      resize: vertical;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus, 
+    input[type="number"]:focus  {
+      background-color: lightyellow;
+    }
+
+      -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 30px;
+        width: 200px;
+        border: 1px solid ;
+        border-radius: 0;
+        padding-left: 5px;
+        background-color: white;
+        border: 1px solid lightgrey;
+        font-size:14px;
+        background: url(http://www.bluearrow.co.uk/style%20library/assets/images/jobsearch_down_arrow.png) 95% 55% no-repeat ;
+    }
+
+    label.comment {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+  </style>
 </head>
 <body>
   <form action="" method="POST">
+    <fieldset>
+      <dl>
+        <dt>
+          <label for ="first_name">First Name</label>
+        </dt>
+        <dd>
+          <input type="text" name="first_name" id="first_name">
+        </dd>
+        <dt>
+          <label for ="last_name">Last Name</label>
+        </dt>
+        <dd>
+          <input type="text"  name="last_name" id="last_name">
+        </dd>
+        <dt>
+          <label for ="email">Email</label>
+        </dt>
+        <dd>
+          <input type="email" name="email" id="email" placeholder="example@email.com" inputmode="email" >
+        </dd> 
+        <dt>
+          <label for ="address">Address</label>
+        </dt>
+        <dd>
+          <input type="text"  name="address" id="address">
+        </dd>
+        <dt><label for ="city">City</label></dt>
+        <dd><input type="text"  name="city" id="city"></dd>
+        <dt><label for="state">State</label></dt>
+        <dd>
+          <select name="state" id="state">
+            <option>AK</option>
+            <option>AL</option>
+            <option>AR</option>
+            <option>AZ</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DC</option>
+            <option>DE</option>
+            <option>FL</option>
+            <option>GA</option>
+            <option>HI</option>
+            <option>IA</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>MA</option>
+            <option>MD</option>
+            <option>ME</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MO</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>NE</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NV</option>
+            <option>NY</option>
+            <option>OH</option>
+            <option>OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VA</option>
+            <option>VT</option>
+            <option>WA</option>
+            <option>WI</option>
+            <option>WV</option>
+            <option>WY</option>
+          </select>
+        </dd>
+        <dt><label for="zipcode">Zipcode</label></dt>
+        <dd><input type="number" name="zipcode" id="zipcode" min="0" max="12345" inputmode="numeric"></dd>
+       </dl>
 
-    <label for ="first_name">First Name</label>
-    <input type="text" name="first_name" id="first_name">
-
-
-    <label for ="last_name">Last Name</label>
-    <input type="text"  name="last_name" id="last_name">
-
-    <label for ="email">Email</label>
-    <input type="email"  name="email" id="email" placeholder="example@email.com" >
-
-    <label for ="address">Address</label>
-    <input type="text"  name="address" id="address">
-
-    <label for ="last_name">City</label>
-    <input type="text"  name="city" id="state">
-
-    <select name="state">
-      <option>AK</option>
-      <option>AL</option>
-      <option>AR</option>
-      <option>AZ</option>
-      <option>CA</option>
-      <option>CO</option>
-      <option>CT</option>
-      <option>DC</option>
-      <option>DE</option>
-      <option>FL</option>
-      <option>GA</option>
-      <option>HI</option>
-      <option>IA</option>
-      <option>ID</option>
-      <option>IL</option>
-      <option>IN</option>
-      <option>KS</option>
-      <option>KY</option>
-      <option>LA</option>
-      <option>MA</option>
-      <option>MD</option>
-      <option>ME</option>
-      <option>MI</option>
-      <option>MN</option>
-      <option>MO</option>
-      <option>MS</option>
-      <option>MT</option>
-      <option>NC</option>
-      <option>ND</option>
-      <option>NE</option>
-      <option>NH</option>
-      <option>NJ</option>
-      <option>NM</option>
-      <option>NV</option>
-      <option>NY</option>
-      <option>OH</option>
-      <option>OK</option>
-      <option>OR</option>
-      <option>PA</option>
-      <option>RI</option>
-      <option>SC</option>
-      <option>SD</option>
-      <option>TN</option>
-      <option>TX</option>
-      <option>UT</option>
-      <option>VA</option>
-      <option>VT</option>
-      <option>WA</option>
-      <option>WI</option>
-      <option>WV</option>
-      <option>WY</option>
-    </select>
-
-    <label for="zipcode">Zipcode</label>
-    <input type="number" name="zipcode" id="zipcode" maxlength="5">
-
-    <label for="color">Which of these colors do you most prefer?</label>
-    <input type="radio" name="color" value="red">Red
-    <input type="radio" name="color" value="blue">Blue
-
-    <label for="tech">What web technologies do you want to hear more about?</label>
-    <input type="checkbox" name="html" value="html">html
-    <input type="checkbox" name="css" value="css">css
-    <input type="checkbox" name="javascript" value="javascript">javascript
-
-    <!-- comment here -->
-    <!-- submit and reset input  -->
-    <!-- hidden time/date input -->
-    <!-- add input mode to email and zipcode -->
-
+      <p>Which of these colors do you most prefer?</p>
+      <ul>
+        <li><label><input type="radio" name="color" value="red">Red</label></li>
+        <li><label><input type="radio" name="color" value="orange">Orange</label></li>
+        <li><label><input type="radio" name="color" value="blue">Blue</label></li>
+      </ul>
+      <p>What web technologies do you want to hear more about?</p>
+      <ul>
+        <li><label><input type="checkbox" name="html">HTML</label></li>
+        <li><label><input type="checkbox" name="javascript">Javascript</label></li>
+        <li><label><input type="checkbox" name="css">CSS</label></li>
+      </ul>
+  
+      <dl>
+        <dt><label for="comment" class="comment">Your comment</label></dt>
+        <dd><textarea name="comment" id="comment" cols="30" rows="10"></textarea></dd>
+      </dl>
+ 
+      <input type="hidden" name="timestamp" value="2016-05-01">
+     <!-- submit and reset input  -->
+      <input type="submit" value="submit">
+      <input type="reset">
+   
+    </fieldset>
   </form>
 
 
