@@ -1,0 +1,107 @@
+/* Use Nunito font instead*/
+@import 'https://fonts.googleapis.com/css?family=Nunito';
+
+
+
+body {
+  font: normal 20px "avenir", Helvetica, sans-serif;
+  background: #2f2840 url(../images/bg_body.gif) 50% 0 repeat;
+}
+ul {
+  list-style-type: none;
+  margin:0;
+}
+
+p {
+
+  font-size: 20px;
+  color: #45494d;
+  font-weight: normal;
+  text-align: justify;
+}
+header {
+ text-align: center;
+ padding-top: 50px;
+}
+header > h1 {
+  padding-bottom: 70px;
+}
+header nav ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  text-transform: uppercase;
+  color: white;
+  padding: 0 45px;
+  color: #cacaca;
+  font-size: 24px;
+}
+a.selected {
+  color: #6db9ff;
+}
+main {
+background-color: white;
+
+}
+main > section {
+  margin: 0 auto;
+  max-width: 750px;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+}
+
+section > article > h2 {
+ color: #45494d;
+ text-align: center;
+ padding-top: 90px;
+}
+section > article > h3 {
+  color: #3e59b2;
+}
+
+h2 ~ h3 {
+  text-align: center;
+}
+
+footer {
+ background-color: #e7e7e7;
+ height: 300px;
+}
+footer > section {
+  max-width: 750px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+footer > section > p {
+  padding-top: 70px;
+  color: #b2b2b2;
+  text-align: center;
+}
+footer > section > ul {
+  padding-top: 45px;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 50px;
+
+}
+footer ul li a {
+  background: transparent url(../images/icons_social-media.png) 0 0 no-repeat;
+  text-indent: -8000px;
+  overflow: hidden;
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+footer ul li a.facebook {
+  background: transparent url(../images/icons_social-media.png) 0 -46px no-repeat;
+
+}
+
