@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Nav</title>
+  <meta name="viewport" content="width=devise-width, initial-scale=1.0 ">
+  <style type="text/css">
+  body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: lightblue;
+  }
+    header {
+      display: block;
+      /*background-color: lightyellow;*/
+
+    }
+    header:before, header:after {
+      content:"";
+      display: block;
+    }
+    header:after {
+      clear: both;
+    }
+    h1 {
+      margin:0;
+    }
+
+  
+    h1  {
+      
+    }
+    h1 a {
+      float: left;
+      background: transparent url(images/logo.png) 0 0 no-repeat;
+      height: 80px;
+      line-height: 80px;
+      width: auto;
+      padding-left: 60px;
+      background-position: -15px 15px;
+      background-size: contain;
+      vertical-align: middle;
+      font-size: 22px;
+    }
+    nav { display: block; text-align: right; }
+    ul {
+      list-style-type: none;
+      margin-right: 5px;  
+
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1><a>Company Logo</a></h1>
+    <nav>
+      <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>

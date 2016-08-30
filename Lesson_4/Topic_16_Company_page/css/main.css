@@ -1,0 +1,223 @@
+body {
+  background: transparent url("../images/bg_body.gif") 50% 0 repeat;
+  font: normal 18px "Avenir", Helvetica, sans-serif;
+  color:#45494d;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 960px;
+}
+header {
+  padding-top: 40px;
+  text-align: center;
+}
+header h1 {
+  color: #FFFFFF;
+}
+header > h1 > a {
+  text-decoration: none;
+  background: transparent url("../images/logo.png") 0 0 no-repeat;
+  width: 298px;
+  height: 243px;
+  text-indent: -8000px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+/*.logo {
+  background: transparent url("../images/logo.png") no-repeat;
+  width: 298px;
+  height: 243px;
+  text-indent: -8000px;
+  display: inline-block;
+  text-align: center;
+}*/
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 55px 60px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+}
+main {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+section h2, section h3 {
+  text-align: center;
+}
+article {
+  padding: 50px 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+footer {
+  background-color: #E7E7E7;
+  color: #b2b2b2;
+  text-align: center;
+}
+footer ul { padding: 25px 0; }
+footer li { display: inline-block; }
+footer section ul li a {
+  background: transparent url("../images/icons_social-media.png") 0 0 no-repeat;
+  width: 46px;
+  height: 46px;
+  text-indent:-8000px;
+  margin: 0 50px;
+  display: inline-block;
+}
+/*---------------------------
+        STYLES ONLY
+----------------------------*/
+footer section ul li a.facebook {
+  background-position: 0 -46px;
+}
+footer section ul li a.email {
+  background-position: 0 -92px;
+}
+footer section ul li a.instagram {
+  background-position: 0 -138px;
+}
+h1 { font-size: 48px; }
+h2 { font-size: 36px; padding-bottom: 30px;}
+h3 { font-size: 24px; color: #3e59b2; padding-top: 15px; }
+img { width:100%; }
+.selected { color: #6db9ff; }
+main p { padding:40px 50px 50px 50px; }
+article p {
+  text-align: justify;
+}
+footer p { padding: 50px 0; }
+#projects article {
+  border-bottom: 1px solid #cccccc;
+}
+#projects .last {
+  border: none;
+  padding-bottom: 0;
+}
+#team ul {
+  text-align: center;
+}
+#team ul li {
+  padding: 0 30px;
+}
+#team ul li, #team ul li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.tablet-visible { display: none;}
+.phone-visible { display: none; }
+/*-----------------------------------
+           MEDIA QUERIES
+-------------------------------------*/
+@media (min-width:480px) and (max-width:768px) {
+
+  .tablet-visible { 
+    display: inline-block; 
+    background-color: #97dbf9; 
+    vertical-align: middle; 
+    position: fixed;
+    top:0;
+    left:50%;
+    width: 150px;
+    line-height: 20px;
+    padding: 10px 0;
+    margin-left: -75px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #000000;
+  }
+  .tablet-visible:before {
+    content:"";
+    width:30px;
+    height: 20px;
+    display: inline-block;
+    background: transparent url(../images/ipad-128.png) 0 0 no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+    vertical-align: middle;
+  }
+
+  header h1 a {
+    width: 229px;
+    height: 185px;
+    background-size: cover;
+  }
+}
+@media (max-width: 480px) {
+
+  .phone-visible { 
+    background-color: yellow; 
+    color: #000000;
+    display: inline-block; 
+    vertical-align: middle; 
+    position: fixed;
+    top:0;
+    left:50%;
+    width: 150px;
+    line-height: 15px;
+    padding: 10px 0;
+    margin-left: -75px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .phone-visible:before {
+    content:"";
+    width:30px;
+    height: 20px;
+    display: inline-block;
+    background: transparent url(../images/phone-128.png) 0 0 no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  header h1 a {
+    float:left;
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    text-indent: 0;
+    padding-left: 50px;
+    background-position: -10px 20px;
+    margin-left: 5px;
+    background-size: contain;
+    font-size: 18px;
+    vertical-align: middle;
+    padding-top: 30px;
+    padding-left: 60px;
+  }
+  nav ul {
+    text-align: right;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  nav ul li a {
+    text-align: right;
+   display: inline-block;
+   margin:0;
+   padding: 0 10px 0 100px;
+   width: auto;
+   font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  article {
+    padding: 10px 10px;
+  }
+  main p {
+    padding: 20px 10px 30px 10px;
+  }
+}

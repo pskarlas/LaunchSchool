@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: black;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+figure {
+  margin:0;
+  padding:0;
+  padding-bottom: 30px;
+}
+main {
+  background-color: #333333;
+  min-width: 600px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 52px 21px 18px 21px;
+  text-align: center;
+  box-sizing: content-box;
+  display: block;
+}
+figure img {
+  width: 100%;
+  border: 15px solid #FFFFFF;
+  margin: 21px 0 3px 0;
+
+}
+main > h1 {
+  color: #FFFFFF;
+  margin: 0;
+}
+figcaption {
+  color:#FFFFFF;
+  text-align: left;
+}
+main ul {
+  padding: 0;
+  margin: 0 -15px;
+  list-style-type: none;
+
+}
+ul li {
+  display: inline-block;
+  width: 25%;
+  padding: 0 15px;
+
+  
+}
+li > img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #FFFFFF;
+}

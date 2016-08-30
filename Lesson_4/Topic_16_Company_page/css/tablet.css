@@ -1,0 +1,12 @@
+@media (min-width: 480px) and (max-width: 768px) {
+
+  main {
+    background-color: red;
+  }
+
+  header > h1 > a {
+    background-position: 0 67px;
+  }
+
+
+} 
