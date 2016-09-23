@@ -1,0 +1,271 @@
+@import url("minireset.css");
+html { 
+  font: normal 16px Avenir, Arial, sans-serif;
+}
+body {
+  background-color: #FFFFFF;
+  color: #45494d;
+
+}
+h2 { 
+  font-size: 2.618em;
+}
+ h3 { 
+  font-size: 1.218em;
+}
+header {
+  background-color: #3d3d3d;
+  text-align: center;
+  padding-top: 130px;
+}
+header h1 {
+  padding: 0 0 130px 0;
+  color: #FFFFFF;
+  font-size: 4.236em;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  background: transparent url("blog_designs/logo.png") 50% 100% no-repeat;
+  font-weight: 500;
+  text-decoration:none;
+}
+header h1 > a {
+  text-decoration:none;
+  color: inherit;
+}
+.container { 
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+.last {
+  padding-top: 35px;
+}
+header nav ul {
+  margin-top: 130px;
+
+
+}
+header nav li {
+  display: inline-block;
+  padding: 0 25px;
+  margin-bottom: 55px;
+}
+header  nav  ul  li  a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+main {
+  padding: 35px;
+  overflow: hidden;
+}
+article > h2 a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+article > h2 + p {
+  margin-bottom: 20px;
+}
+h2 + p > a {
+  color: #50c3af;
+  text-decoration: none;
+}
+#content {
+  float: left;
+  width: 65%;
+  box-sizing: border-box;
+  padding-right: 11%;
+}
+#navigation {
+  overflow: hidden;
+  width: auto;
+  background-color: #F6F7F8;
+  padding: 35px;
+  box-sizing: border-box;
+}
+#navigation ul {
+  padding: 15px 0 60px 0;
+}
+#navigation ul li {
+  background: transparent url("blog_designs/arrow.png") 0 0 no-repeat;
+  padding-left: 20px;
+  vertical-align: middle;
+  line-height: 12px;
+  padding-bottom: 10px;
+
+}
+#navigation ul li a {
+  text-transform: capitalize;
+  text-decoration:none;
+  color: #6c6c6c;
+
+}
+#navigation h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#navigation > ul + h3 {
+  padding-bottom: 15px;
+}
+#pagination {
+  margin-top: 35px;
+}
+#comments a {
+  color: #50c3af;
+  text-decoration: none;
+}
+#comments p {
+  padding-bottom: 15px;
+}
+.button {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  background-color: #50c3af;
+  border-radius: 20px;
+  padding: 5px 25px;
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance:none;
+  border:none;
+}
+.disabled {
+  background-color: rgb(210, 213, 218);
+
+}
+input[type="text"], input[type="email"] {
+  width: 100%;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 16px;
+  border-radius:5px;
+  border:1px solid #50c3af;
+  margin: 10px 0 10px 0;
+}
+form {
+  margin-top:35px;
+}
+label {
+  font-weight: 500;
+  margin-top: 30px;
+}
+footer {
+  padding:20px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid #d0d0d0;
+
+}
+footer p {
+  font-size: 12px;
+  color: #898c91;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="submit"] {
+  margin-top: 15px;
+}
+textarea {
+  resize: vertical;
+  border:1px solid #50c3af;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (min-width: 601px) and (max-width: 768px ) {
+  html { 
+  font: normal 12px Avenir, Arial, sans-serif;
+  }
+  header {
+    padding-top: 50px;
+  }
+  header nav li {
+    margin-bottom: 20px;
+    font-size: 20px;
+
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  html { 
+  font: normal 12px Avenir, Arial, sans-serif;
+  }
+  header {
+    padding-top: 50px;
+  }
+  header h1 {
+    background-size: 90% auto;
+  }
+  header nav li {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  #content {
+    width: 100%;
+    display: block;
+    float: none;
+    padding: 0 35px 0 35px; 
+  }
+  #navigation {
+    margin-top: 35px;
+    width: 100%;
+  }
+  main {
+    padding:25px 0 0 0;
+  }
+  #navigation ul {
+    padding-bottom: 0;
+  }
+  .categories-block, .about-block {
+    display: inline-block;
+    max-width: 50%;
+    padding: 0 5% 0 5%;
+    height: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  html { 
+  font: normal 12px Avenir, Arial, sans-serif;
+  }
+  header {
+    padding-top: 50px;
+  }
+  header h1 {
+    background-size: 90% auto;
+  }
+  header nav li {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+   #content {
+    width: 100%;
+    display: block;
+    float: none;
+    padding: 0 35px 0 35px; 
+  }
+  #navigation {
+    margin-top: 35px;
+    width: 100%;
+    background-color:#FFFFFF;
+  }
+  #navigation ul {
+    padding-bottom: 0;
+  }
+  main {
+    padding:25px 0 0 0;
+  }
+  .categories-block, .about-block {
+    display: block;
+    max-width: 100%;
+    background-color: #F6F7F8;
+    padding: 15px;
+}
+
+.about-block {
+  margin-top: 25px;
+}

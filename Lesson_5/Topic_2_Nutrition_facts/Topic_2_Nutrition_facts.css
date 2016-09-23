@@ -1,0 +1,89 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  font: normal 28px Arial, sans-serif;
+  padding: 8px 0 0 8px;
+}
+h1 { 
+  font-size: 55px; 
+  font-weight: bold;
+}
+article {
+  border: 2px solid black;
+  max-width:680px;
+  min-width: 680px;
+  padding: 10px 15px;
+}
+
+main {
+
+}
+main h2 {
+  font-weight: bolder;
+  font-size: 28px;
+}
+main > h2 {
+  border-top: 30px solid black;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+dl > dt  {
+
+  padding: 5px 0;
+
+}
+
+main dl {
+  display: inline-block;
+  width: 50%;
+  border-bottom: 15px solid black;
+}
+main dl dt, main dl dt, main dl dd {
+  display: inline-block;
+}
+
+h1 ~ p {
+  font-size: 28px;
+  padding-bottom: 3px;
+}
+main > h2 + dl dt { font-weight: bold; }
+dl + dl { text-align: right;  }
+
+table {
+  width: 100%;
+}
+tr { width: 100%; }
+tr > th {
+  text-align: right;
+}
+table tr td:nth-child(2) {
+  text-align: left;
+  color:black;
+}
+table tr td:nth-child(2) {
+  text-align: right;
+  color:black;
+}
+td > dl { border:none; width: 100%; }
+td > dl > dt { font-weight: bold; }
+.indent { 
+  text-indent: 30px; 
+  font-weight: normal;
+  }
+table + table tr th { 
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px solid black;
+}
+table + table { 
+font-size: 20px; }
+table + table tr td:nth-child(2){
+  text-align: left;
+}
